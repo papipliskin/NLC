@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+   <!--This is the table layout for the FirstName, Lastname and Welcome button-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Text box for First name-->
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="18dp"
+            android:layout_marginTop="87dp"
+            android:background="#003eff"
+            android:drawablePadding="20dp"
+            android:hint="First Name"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+
+            android:textStyle="bold" />
+
+        <!--Text box for Last name-->
+        <EditText
+            android:id="@+id/lastNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:layout_marginTop="87dp"
+            android:background="#003eff"
+            android:drawablePadding="20dp"
+            android:hint='Last Name'
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+
+            android:textStyle="bold" />
+
+        <!--This is the Welcome Button-->
+        <Button
+            android:id="@+id/welcomeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Button"
+            android:textSize="25sp"
+            android:layout_margin="18dp"
+            android:padding="20dp"
+
+
+            />
+
+        <!--This is the welcome banner-->
+        <TextView
+            android:id="@+id/welcomeBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+
+
+
+            />
+
+    </LinearLayout>
+</RelativeLayout>
